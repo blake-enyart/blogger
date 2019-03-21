@@ -13,7 +13,7 @@ describe "user sees one article" do
       expect(page).to have_current_path(article_path(article_1))
       expect(page).to have_content(article_1.title)
       expect(page).to have_content(article_1.body)
-      expect(page).to.not have_content(article_2.title)
+      expect(page).not_to have_content(article_2.title)
     end
   end
 end
