@@ -15,7 +15,7 @@ describe 'user deletes a article' do
 
 
         expect(current_path).to eq(articles_path)
-        within("#main-index") do
+        within("#main-article-index") do
           expect(page).not_to have_content(@article_1.title)
           expect(page).not_to have_content(@article_1.body)
         end
